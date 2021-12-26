@@ -1,0 +1,36 @@
+.cube{
+    background-color: rgb(70, 4, 83);
+    height: 300px;
+    width: 300px;
+    }
+    .child{
+    background-color: gold;
+    height: 50%;
+    width: 50%;
+    animation: left-to-right 1s cubic-bezier(.67,-1.04,.22,1.91) forwards infinite alternate;
+}
+    
+    .cub:hover .child{
+    
+animation-play-state: paused;
+    }
+
+    @keyframes left-to-right{
+        0%{
+            background-color:rgb(255, 255, 255);
+            transform: translateX(0);
+        }
+        33%{
+            background-color: rgb(3, 255, 3);
+            transform: translateY(100%);
+        }
+        66%{
+            background-color: rgb(255, 64, 0);
+            transform: translateX(100%) translateY(100%);
+        }
+        100% {
+            background-color: rgb(255, 0, 136);
+            transform: translateX(100%);
+        }
+
+    }
